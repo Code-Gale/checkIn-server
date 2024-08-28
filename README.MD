@@ -46,22 +46,22 @@ The server will start running on `http://localhost:5000`.
 ## API Endpoints
 
 1. **Registration**:
-- Endpoint: `POST /api/users/register`
+- Endpoint: `POST /api/v1/register`
 - Request body: `{ "username", "email", "password" }`
 - Response: `{ "token" }`
 
 2. **Login**:
-- Endpoint: `POST /api/users/login`
+- Endpoint: `POST /api/v1/login`
 - Request body: `{ "email", "password" }`
 - Response: `{ "token" }`
 
 3. **Check-in**:
-- Endpoint: `POST /api/users/checkin`
+- Endpoint: `POST /api/v1/checkin`
 - Headers: `Authorization: Bearer <token>`
 - Response: `{ "message": "Checked in successfully" }`
 
 4. **Check-out**:
-- Endpoint: `POST /api/users/checkout`
+- Endpoint: `POST /api/v1/checkout`
 - Headers: `Authorization: Bearer <token>`
 - Response: `{ "message": "Checked out successfully" }`
 
